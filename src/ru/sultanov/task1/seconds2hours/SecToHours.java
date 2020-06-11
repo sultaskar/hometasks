@@ -7,9 +7,8 @@ public class SecToHours {
     public static void main(String[] args) {
         System.out.println("Введите количество секунд");
         Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();// Количество секунд
-        double b = (double) a / 3600; // Количество часов
-        DecimalFormat df = new DecimalFormat("###.###");
-        System.out.println("В " + a + " секундах будет " + df.format(b) + " часов");
+        int seconds = sc.nextInt();// Количество секунд
+        double hours = seconds / 3600.0; // Количество часов
+        System.out.printf("В %d секундах будет %.2f часов", seconds, hours);
     }
 }
